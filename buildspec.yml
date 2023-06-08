@@ -16,7 +16,6 @@ phases:
       - unzip -qq -o -d liquibase liquibase.zip
       - export PATH=$PATH:$PWD/liquibase
       - chmod +x liquibase
-      - liquibase -version
   pre_build:
     commands:
       - echo $RDS_HOST:latest
